@@ -1,0 +1,73 @@
+﻿  stdafx.cpp
+  ChatHook.cpp
+ChatHook.cpp(63): warning C4244: '인수': 'SIZE_T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+ChatHook.cpp(64): warning C4244: '인수': 'SIZE_T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+ChatHook.cpp(65): warning C4244: '인수': 'SIZE_T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+ChatHook.cpp(69): warning C4244: '=': 'SIZE_T'에서 'unsigned char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+ChatHook.cpp(43): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+ChatHook.cpp(45): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _access. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_io.h(439): note: 'access' 선언을 참조하십시오.
+  HackDLL.cpp
+HackDLL.cpp(8): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(240): note: 'freopen' 선언을 참조하십시오.
+  MemoryScanner.cpp
+  Packets.cpp
+Packets.cpp(36): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+Packets.cpp(37): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1193): note: 'fscanf' 선언을 참조하십시오.
+Packets.cpp(44): warning C4477: 'fscanf' : 서식 문자열 '%02X'에 'unsigned int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'BYTE *'입니다.
+  Packets.cpp(44): note: 서식 문자열에서 '%hhX'을(를) 사용하는 것이 좋습니다.
+Packets.cpp(44): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1193): note: 'fscanf' 선언을 참조하십시오.
+Packets.cpp(50): warning C4477: 'fscanf' : 서식 문자열 '%02X'에 'unsigned int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'BYTE *'입니다.
+  Packets.cpp(50): note: 서식 문자열에서 '%hhX'을(를) 사용하는 것이 좋습니다.
+Packets.cpp(50): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1193): note: 'fscanf' 선언을 참조하십시오.
+Packets.cpp(72): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+Packets.cpp(77): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: 'wcscpy' 선언을 참조하십시오.
+Packets.cpp(124): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+Packets.cpp(146): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+Packets.cpp(154): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+  PlainPacketHook.cpp
+PlainPacketHook.cpp(26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+PlainPacketHook.cpp(24): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'SIZE_T'입니다.
+  PlainPacketHook.cpp(24): note: 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(24): note: 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(24): note: 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+PlainPacketHook.cpp(17): warning C4101: 'curbuf' :참조되지 않은 지역 변수입니다.
+PlainPacketHook.cpp(20): warning C4101: 'fp' :참조되지 않은 지역 변수입니다.
+PlainPacketHook.cpp(97): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+PlainPacketHook.cpp(182): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+PlainPacketHook.cpp(183): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+PlainPacketHook.cpp(193): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+PlainPacketHook.cpp(132): warning C4101: 'fp' :참조되지 않은 지역 변수입니다.
+PlainPacketHook.cpp(241): warning C4244: '초기화 중': 'SIZE_T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+PlainPacketHook.cpp(245): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'DWORD64'입니다.
+  PlainPacketHook.cpp(245): note: 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(245): note: 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(245): note: 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+PlainPacketHook.cpp(248): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'DWORD64'입니다.
+  PlainPacketHook.cpp(248): note: 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(248): note: 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(248): note: 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+PlainPacketHook.cpp(251): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'SIZE_T'입니다.
+  PlainPacketHook.cpp(251): note: 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(251): note: 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+  PlainPacketHook.cpp(251): note: 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+  RecvHook.cpp
+RecvHook.cpp(18): warning C4244: '=': '__int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SendHook.cpp
+SendHook.cpp(17): warning C4244: '=': '__int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  dllmain.cpp
+  코드를 생성하고 있습니다.
+  All 170 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  HackDLL.vcxproj -> C:\Users\grill66\Documents\GitHub\HackDLL\HackDLL\x64\Release\HackDLL.dll
