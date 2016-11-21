@@ -110,67 +110,69 @@ int PlayMacro() {
 	char buf[128] = { 0, };
 	int i = 0;
 
+	while (isMacroOn) {
+		SetForegroundWindow(GameWindow);
 
-	SetForegroundWindow(GameWindow);
+		// Battle Cycle Starts...
 
-	// Battle Cycle Starts...
-	
-	// Wait untill get the target
-	while (setTarget == FALSE)
-		Sleep(300);
+		// Wait untill get the target
+		while (setTarget == FALSE)
+			Sleep(300);
 
-
-	// Teleport character to location adjacent to TARGET
-	sprintf(filename, "D:\\teleport.txt");
-	TriggerPacket();
-
-	printf("[ battletime : %d ]\n", battletime);
-
-	while (battletime == FALSE) {	// Sleep untill target attack info is captured...
-		Sleep(1000);
-	}
-
-	printf("[ break while... ]\n");
-	
-	isEliminated = FALSE;
-	
-	memcpy(buf, "\x2E\x00\x0B\x52", 4);
-	memcpy(buf + 4, "\xDD\x8C\x0F\x00", 4);
-	memcpy(buf + 8, (char *)&playerattackinfo.X, 4);
-	memcpy(buf + 12, (char *)&playerattackinfo.Y, 4);
-	memcpy(buf + 16, (char *)&playerattackinfo.Z, 4);
-	memcpy(buf + 20, (char *)&playerattackinfo.Dir, 2);
-	memset(buf + 22, 0, 24);
-
-	
-	fp = fopen("D:\\attack.txt", "w+");
-	fprintf(fp, "1\n");
-
-	for (i = 0; i < 46; i++)
-		fprintf(fp, "%02X ", *((unsigned char *)&buf[i]));
-
-	fclose(fp);
-	
-	sprintf(filename, "D:\\attack.txt");
-
-	while (isEliminated == FALSE) {
-		Sleep(1000);
+		// Teleport character to location adjacent to TARGET
+		sprintf(filename, "D:\\teleport.txt");
 		TriggerPacket();
+
+		printf("[ battletime : %d ]\n", battletime);
+
+		while (battletime == FALSE) {	// Sleep untill target attack info is captured...
+			Sleep(1000);
+		}
+
+		printf("[ break while... ]\n");
+
+		isEliminated = FALSE;
+
+		memcpy(buf, "\x2E\x00\x0B\x52", 4);
+		memcpy(buf + 4, "\xDD\x8C\x0F\x00", 4);
+		memcpy(buf + 8, (char *)&playerattackinfo.X, 4);
+		memcpy(buf + 12, (char *)&playerattackinfo.Y, 4);
+		memcpy(buf + 16, (char *)&playerattackinfo.Z, 4);
+		memcpy(buf + 20, (char *)&playerattackinfo.Dir, 2);
+		memset(buf + 22, 0, 24);
+
+
+		fp = fopen("D:\\attack.txt", "w+");
+		fprintf(fp, "1\n");
+
+		for (i = 0; i < 46; i++)
+			fprintf(fp, "%02X ", *((unsigned char *)&buf[i]));
+
+		fclose(fp);
+
+		sprintf(filename, "D:\\attack.txt");
+
+		while (isEliminated == FALSE) {
+			Sleep(1000);
+			TriggerPacket();
+		}
+
+		printf("[ Battle Finished... ]\n");
+		/*
+		while (isEliminated == FALSE) {
+
+		}*/
+
+		// 무한루프를 위해서는 지워야됨
+
+		battletime = FALSE;
+		isEliminated = TRUE;
+		setTarget = FALSE;
+
+		printf("Cycle Finished...\n");
 	}
 
-	printf("[ Battle Finished... ]\n");
-	/*
-	while (isEliminated == FALSE) {	
-		
-	}*/
-
-
-	isMacroOn = FALSE;// 무한루프를 위해서는 지워야됨
-
-	battletime = FALSE;
-	isEliminated = TRUE;
-	setTarget = FALSE;
-	
+	isMacroOn = FALSE;
 	printf("[ Macro Finished... tid : %d]\n", GetCurrentThreadId());
 
 	return 0;
